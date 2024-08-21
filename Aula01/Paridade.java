@@ -7,12 +7,13 @@ public class Paridade
 	 Scanner input = new Scanner(System.in);
 	int num;
 
-	System.out.println("Entre com um numero: ");
+	System.out.printf("Entre com um numero: ");
 	num = input.nextInt();
 
 	if(num%2==0){
-	System.out.println("O numero %d e par.",num);	
+	System.out.printf("O numero %d e par.",num);	
 	}else{ 
-	System.out.println("O numero %d e ímpar.",num);
+	System.out.printf("O numero %d e ímpar.",num);
+}
 }
 }
