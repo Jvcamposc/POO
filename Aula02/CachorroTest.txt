@@ -1,0 +1,13 @@
+public class CachorroTest{
+
+public static void main(String[] args){
+	Scanner input = new Scanner(System.in);
+	String nome;
+
+	System.out.println("Qual e o nome do seu cachorro? ");
+	nome = input.nextLine();
+
+	Cachorro zeca = new Cachorro();
+	zeca.latir("Zeca");
+   }
+}
