@@ -1,4 +1,4 @@
-
+package  atividade;
 /*Crie um aplicativo que mantém o saldo de uma conta bancária, realiza depósito e mostra o saldo da conta. Realize depósitos e apresente ao usuário seu saldo. (Dica: utilize o método nextDouble da classe Scanner.)*/
 import java.util.Scanner;
 import javax.swing.JOptionPane;
