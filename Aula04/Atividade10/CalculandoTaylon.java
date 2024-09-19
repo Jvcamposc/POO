@@ -1,42 +1,34 @@
 //Faça um programa que calcule o valor aproximado de cos(x) pela série de Taylor, dado pela aproximação abaixo:
 package Aula04.Atividade10;
 
+import javax.swing.JOptionPane;
 import java.util.Scanner;
 
 public class CalculandoTaylon {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        double x = Double.parseDouble(JOptionPane.showInputDialog(null, "Entre com x para cos(x): "));
+    
+        JOptionPane.showMessageDialog(null, "cos(" + x + ") = " + Trigonometria.cos(x));
+    }
+}
 
-        System.out.print("Digite x (graus): ");
-        double graus = input.nextDouble();
+class Trigonometria {
 
-        // Converter graus para radianos
-        double radianos = Math.toRadians(graus);
-
-        System.out.print("Digite o número de termos: ");
-        int termos = input.nextInt();
-
-        double resultado = 1; // Inicia a soma com o primeiro termo
-        int sinal = -1; // Para alternar entre + e -
-
-        // Calcular a série de Taylor
-        for (int i = 1; i <= termos; i++) {
-            double termo = Math.pow(radianos, 2 * i) / fatorial(2 * i);
-            resultado += sinal * termo; 
-            sinal *= -1; // Troca o sinal
+    public static int fatorial(int n) {
+        int fat = 1;
+        for (int i = 1; i <= n; i++) {
+            fat *= i; 
         }
-
-        System.out.printf("A aproximação de cos(%.1f) é: %.4f%n", graus, resultado);
-        
-        input.close(); 
+        return fat;
     }
 
-    // Método para calcular o fatorial
-    public static double fatorial(int num) {
-        double fatorial = 1;
-        for (int i = 2; i <= num; i++) {
-            fatorial *= i; // Multiplica para calcular o fatorial
+    public static double cos(double x) {
+        double cosseno = 0;
+        x = Math.toRadians(x); 
+        for (int i = 0; i < 10; i++) {
+            int termo = 2 * i; 
+            cosseno += Math.pow(-1, i) * Math.pow(x, termo) / fatorial(termo);
         }
-        return fatorial;
+        return cosseno;
     }
 }
