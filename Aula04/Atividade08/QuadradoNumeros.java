@@ -8,6 +8,13 @@ import java.util.Scanner;
 public class QuadradoNumeros {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        int soma= 0;
+        System.out.println("Digite o numero que deseja saber o quadrado: ");
+        int numero = scanner.nextInt();
+        
+        for(int i = 0; i < numero; i ++){
+            soma = soma + 2 * i + 1;
+        }
+        System.out.printf("O quadrado de %d e: %d!", numero , soma);
     }
 }
