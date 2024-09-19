@@ -8,7 +8,6 @@ public class menorinteiro {
 
         int contador, numero = 0;
         
-        
         System.out.println("Digite a quantidade de numero a ser digitados: ");
         numero = scanner.nextInt();
 
