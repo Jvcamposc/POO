@@ -1,3 +1,6 @@
+/*Escreva um programa que leia a quantidade em segundos e imprima o resultado em dias, horas, minutos e
+segundos.
+ */
 import java.util.Scanner;
 public class atividade4 {
     public static void main(String[] args) throws Exception {

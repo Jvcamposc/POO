@@ -1,3 +1,6 @@
+/*Escreva um aplicativo que solicita ao usuário inserir dois inteiros, obtém do usuário esses números e imprime
+sua soma, produto, diferença e divisão.
+ */
 import java.util.Scanner;
 public class atividade1 {
     public static void main(String[] args) throws Exception {
