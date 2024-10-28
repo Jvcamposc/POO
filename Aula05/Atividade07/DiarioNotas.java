@@ -1,3 +1,9 @@
+/*Faça um aplicativo que contenha duas classes DiarioNotas e DiarioNotasTest. Na primeira
+classe, é necessário armazenar o nome do curso e as notas do aluno. Crie métodos para
+verificar a maior e menor nota do estudante, a média delas e um gráfico de barras ( ”*” ). Na
+classe DiarioNotasTest, você vai atribuir as notas para o objeto da classe DiarioNotas e
+apresentar um relatório das notas, a maior nota, a menor nota e a distribuição num gráfico de
+barras ( ”*” ) */
 package Aula05.Atividade07;
 
 import java.util.ArrayList;
