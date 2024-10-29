@@ -1,3 +1,4 @@
+/*Crie um programa que calcula o fatorial de um número inteiro positivo. Use assert para garantir que o número fornecido seja não negativo. Lembrete Para ativar as assertions , você deve executar o programa com o argumento -ea (enable assertions): java -ea NomeDoPrograma */
 package Aula06.Atividade10;
 
 import java.util.Scanner;
