@@ -1,3 +1,5 @@
+/*Crie um programa que receba as notas de um aluno e use assert para garantir que as notas
+estejam entre 0 e 10 */
 package Aula06.Atividade07;
 
 import java.util.Scanner;
